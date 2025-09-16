@@ -1,0 +1,19 @@
+@CleanTeeth.API_HostAddress = http://localhost:5030
+
+POST {{CleanTeeth.API_HostAddress}}/register
+Content-Type: application/json
+
+{
+  "email": "felipe@example.com",
+  "password": "aA123456!"
+}
+
+###
+
+POST {{CleanTeeth.API_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "email": "felipe@example.com",
+  "password": "aA123456!"
+}

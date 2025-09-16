@@ -1,0 +1,32 @@
+@CleanTeeth.API_HostAddress = http://localhost:5030/api/appointments
+
+
+GET {{CleanTeeth.API_HostAddress}}
+ACCEPT: application/json
+
+###
+
+GET {{CleanTeeth.API_HostAddress}}/01990F9A-C236-76C9-8D7B-B3F183EB6698
+ACCEPT: application/json
+
+###
+
+POST {{CleanTeeth.API_HostAddress}}
+Content-Type: application/json
+
+{
+  "patientId": "01990a74-3c18-73f5-813a-2b3961a62a34",
+  "dentistId": "01990FC5-7AEE-70CA-B91E-6CC5FD7EE768",
+  "dentalOfficeId": "0198CD02-22B2-726B-96E5-01E2403CF109",
+  "startDate": "2025-09-13T09:30:00",
+  "endDate": "2025-09-13T09:45:00"
+}
+
+###
+
+POST {{CleanTeeth.API_HostAddress}}/01990FC5-CF73-7F27-ABA1-32049551915F/complete
+
+
+###
+
+POST {{CleanTeeth.API_HostAddress}}/01990FC6-35C8-7703-A6EC-69A8A4DF4DC7/cancel
